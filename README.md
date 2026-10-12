@@ -58,6 +58,19 @@ ejemplo de uso:
 python -m space_titanic.modeling.train --max-iter 500 --c 0.5 --solver liblinear --seed 123
 ```
 
+Tambien se puede correr todo el flujo de trabajo con un solo comando:
+
+```bash
+make train
+```
+
+ejemplo con argumentos:
+
+```bash
+make train ARGS="--max-iter 500 --c 0.5 --solver liblinear --seed 123"
+```
+
+
 El seed para la reproducibilidad de los experimentos es 42 por defecto. Se puede cambiar al mandar el argumento --seed o cambiando la constante `RANDOM_STATE` en el archivo `config.py`. `RANDOM_STATE` también se utiliza para la división de los datos en entrenamiento y prueba.
 
 El archivo `requirements.txt` contiene todas las versiones exactas de las dependencias necesarias para ejecutar el proyecto. Se requiere Python 3.13

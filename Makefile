@@ -56,9 +56,18 @@ test:
 
 ## Make dataset
 .PHONY: data
-data: requirements
-	$(PYTHON_INTERPRETER) space_titanic/dataset.py
+data: 
+	$(PYTHON_INTERPRETER) -m space_titanic.dataset
 
+## Generate features
+.PHONY: features
+features: data
+	$(PYTHON_INTERPRETER) -m space_titanic.features
+
+## Train model (pasa hiperparámetros con ARGS="...")
+.PHONY: train
+train: features
+	$(PYTHON_INTERPRETER) -m space_titanic.modeling.train $(ARGS)
 
 #################################################################################
 # Self Documenting Commands                                                     #
