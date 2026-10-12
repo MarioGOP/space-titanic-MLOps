@@ -189,3 +189,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# MLflow
+mlflow.db
+mlartifacts/
+mlruns/
+
+# Modelos y figuras generados
+models/*.pkl
+reports/figures/*.png

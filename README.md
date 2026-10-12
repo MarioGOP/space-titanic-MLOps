@@ -23,7 +23,7 @@ Instala las dependencias del proyecto:
 pip install -r requirements.txt
 ```
 
-Descarga el dataset de Kaggle y colócalo en la carpeta `data/raw/`. Se utiliza solo el dataset de entrenamiento para este proyecto. Renombra el archivo `train.csv` a `dataset.csv` y asegúrate de que esté en la ruta `data/raw/dataset.csv`.
+Descarga el dataset de Kaggle (https://www.kaggle.com/competitions/spaceship-titanic/data) y colócalo en la carpeta `data/raw/`. Se utiliza solo el dataset de entrenamiento para este proyecto. Renombra el archivo `train.csv` a `dataset.csv` y asegúrate de que esté en la ruta `data/raw/dataset.csv`.
 
 Corre la limpieza de datos y la generación de características:
 
